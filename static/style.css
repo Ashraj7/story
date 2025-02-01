@@ -1,0 +1,125 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f8f8;
+    /* Add the background image here: */
+    background-image: url("{{ url_for('static', filename='images/your_background_image.jpg') }}"); /* Replace with your image file name */
+    background-size: cover; /* or contain, auto, 100% 100%, etc. */
+    background-repeat: no-repeat; /* Usually you don't want the image to repeat */
+    background-position: center center; /* Center the image */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+    font-family: 'Georgia', serif; /* Use Georgia for the heading as well */
+    font-size: 2em;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: calc(100% - 12px);
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Or #9B78D8 for purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    font-family: 'Georgia', serif; /* Use Georgia for buttons too */
+}
+
+button:hover {
+    background-color: #45a049; /* Or a darker shade of purple */
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.message {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#story-area {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+#choices-area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#end-button {
+    background-color: #d9534f;
+}
+
+#end-button:hover {
+    background-color: #c9302c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: calc(100% - 12px);
+    }
+    button {
+        width: 100%;
+    }
+}
