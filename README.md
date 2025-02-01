@@ -65,6 +65,8 @@ The Weaver's Odyssey uses the Gemini API to generate story content in real-time,
 
 7.  Open your web browser and go to the URL provided by Flask (usually `http://127.0.0.1:5000/`).
 
+8.  video link:https://drive.google.com/drive/folders/1SExiAEPu6S-0AIy242DUx9qtAweMT2h4?usp=drive_link
+
 ## Team Contributions
 
 *   **[Ashitha Raj B S]:** Developed the core Flask application, including routing and session management. Integrated the Gemini API for dynamic story generation. Designed and implemented the dynamic background image feature. Created the HTML templates and CSS styling.
